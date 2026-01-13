@@ -2,23 +2,23 @@
 <duixml>
     <element resid="main" class="main_content" sheet="xp_logon" layout="borderlayout()">
         <element class="top_panel" layoutpos="top" layout="borderlayout()">
-            <element class="divider" layoutpos="bottom" height="2rp" content="resbmp(1, 0, -1, -1, 0, 1, 1)" />
+            <element class="divider" layoutpos="bottom" height="2rp" content="resbmp(13001, 0, -1, -1, 0, 1, 1)" />
         </element>
 
-        <element class="content_panel" layoutpos="top" layout="verticalflowlayout()" content="resbmp(6, 0, -1, 0, 0, 0, 1">
+        <element class="content_panel" layoutpos="top" layout="verticalflowlayout()" content="resbmp(13005, 0, -1, 0, 0, 0, 1">
 
         </element>
 
         <element class="bottom_panel" layoutpos="bottom" layout="borderlayout()">
-            <element class="divider" layoutpos="top" height="2rp" content="resbmp(2, 2, -1, -1, 0, 1, 1)" />
+            <element class="divider" layoutpos="top" height="2rp" content="resbmp(13000, 2, -1, -1, 0, 1, 1)" />
             <element class="bottom_opts" layoutpos="top" layout="filllayout()" padding="rect(25rp, 20rp, 25rp, 20rp)">
                 <element class="turn_off_pc_link" layout="flowlayout()">
                     <button class="power_btn" layout="flowlayout()" accrole="PushButton">
-                        <element class="power_icn" content="resbmp(3, 0, -1, 0, 0, 1, 1)" />
-                        <element class="power_lbl" content="resstr(12)" />
+                        <element class="power_icn" content="resbmp(13002, 0, -1, 0, 0, 1, 1)" />
+                        <element class="power_lbl" content="resstr(14001)" />
                     </button>
                 </element>
-                <element class="log_on_acc_txt" width="325rp" layoutpos="right" content="resstr(11)" padding="rect(18rp, 0rp, 0rp, 0rp)" />
+                <element class="log_on_acc_txt" width="325rp" layoutpos="right" content="resstr(14000)" padding="rect(18rp, 0rp, 0rp, 0rp)" />
             </element>
         </element>
     </element>
