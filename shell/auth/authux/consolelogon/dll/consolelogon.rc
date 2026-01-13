@@ -468,6 +468,22 @@ IDB_SHUTDOWNDROPDOWNBUTTONACTIVE	    BITMAP				  "resources/12301.bmp"
 IDB_PLAPICON 							BITMAP 				  "resources/12232.bmp"
 IDB_DEFAULTPFP							BITMAP				  "resources/usertile1.bmp"
 
+// XP related resources
+STRINGTABLE
+{
+	IDS_CPLNOTICE "After you log on, you can add or change accounts. Just go to Control Panel and click User Accounts."
+	IDS_TURNOFFPC "Turn off computer"
+}
+
+UIFILE_LOGON_XP UIFILE "resources/xp/authui-xp.xml"
+
+IDB_TOPBDR								BITMAP                "resources/xp/topbdr.bmp"
+IDB_BTMBDR								BITMAP                "resources/xp/btmbdr.bmp"
+IDB_PWRBTN								BITMAP                "resources/xp/powerbtn.bmp"
+IDB_SEPARATOR							BITMAP                "resources/xp/separator.bmp"
+IDB_XPLOGO								BITMAP                "resources/xp/xplogo.bmp"
+IDB_BGSHINE                             BITMAP                "resources/xp/bgshine.bmp"
+
 #include <ntverp.h>
 #undef VER_COMPANYNAME_STR
 #undef VER_PRODUCTNAME_STR

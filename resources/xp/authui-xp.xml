@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<duixml>
+    <element resid="main" class="main_content" sheet="xp_logon" layout="borderlayout()">
+        <element class="top_panel" layoutpos="top" layout="borderlayout()">
+            <element class="divider" layoutpos="bottom" height="2rp" content="resbmp(1, 0, -1, -1, 0, 1, 1)" />
+        </element>
+
+        <element class="content_panel" layoutpos="top" layout="verticalflowlayout()" content="resbmp(6, 0, -1, 0, 0, 0, 1">
+
+        </element>
+
+        <element class="bottom_panel" layoutpos="bottom" layout="borderlayout()">
+            <element class="divider" layoutpos="top" height="2rp" content="resbmp(2, 2, -1, -1, 0, 1, 1)" />
+            <element class="bottom_opts" layoutpos="top" layout="filllayout()" padding="rect(25rp, 20rp, 25rp, 20rp)">
+                <element class="turn_off_pc_link" layout="flowlayout()">
+                    <button class="power_btn" layout="flowlayout()" accrole="PushButton">
+                        <element class="power_icn" content="resbmp(3, 0, -1, 0, 0, 1, 1)" />
+                        <element class="power_lbl" content="resstr(12)" />
+                    </button>
+                </element>
+                <element class="log_on_acc_txt" width="325rp" layoutpos="right" content="resstr(11)" padding="rect(18rp, 0rp, 0rp, 0rp)" />
+            </element>
+        </element>
+    </element>
+    <stylesheets>
+        <style resid="xp_logon">
+            <if class="main_content">
+                <element background="rgb(90, 126, 220)" />
+            </if>
+
+            <if class="top_panel">
+                <element height="80rp" />
+                <element background="rgb(0, 48, 156)" />
+            </if>
+
+            <if class="bottom_panel">
+                <element height="96rp" />
+                <element background="gradient(argb(0, 57, 52, 173), argb(0, 0, 48, 156), 0)" />
+            </if>
+
+            <if class="content_panel">
+                <!-- Needs to be changed to be dynamic -->
+                <element height="200rp" />
+            </if>
+
+            <!-- Turn off computer link -->
+            <if class="turn_off_pc_link">
+                <element background="argb(0, 0, 0, 0)" />
+            </if>
+            
+            <!-- Turn off computer label (Text) -->
+            <if class="power_lbl">
+                <element fontface="Trebuchet MS" />
+                <element fontsize="14pt" />
+                <element foreground="rgb(255, 255, 255)" />
+                <element background="argb(0, 0, 0, 0)" />
+            </if>
+
+            <!-- Control Panel notice about User Accounts-->
+            <if class="log_on_acc_txt">
+                <element fontface="Tahoma" />
+                <element fontsize="9pt" />
+                <element foreground="rgb(255, 255, 255)" />
+                <element background="argb(0, 0, 0, 0)" />
+                <element contentalign="wrapleft" />
+            </if>
+        </style>
+    </stylesheets>
+</duixml>

@@ -147,3 +147,22 @@
 
 #define IDB_DEFAULTPFP 6969
 #define IDB_CREDPROVIMAGE 4242424
+
+// XP related resources
+// Bitmaps
+#define IDB_TOPBDR 13000
+#define IDB_BTMBDR 13001
+
+#define IDB_PWRBTN 13002
+
+#define IDB_SEPARATOR 13003
+#define IDB_XPLOGO 13004
+
+#define IDB_BGSHINE 13005
+
+// Strings
+#define IDS_CPLNOTICE 14000
+#define IDS_TURNOFFPC 14001
+
+// UIFILEs
+#define UIFILE_LOGON_XP 15000
